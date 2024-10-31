@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jamia Millia Islamia - Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <button class="sign-in-btn">SIGN IN</button>
+      <div class="header-content">
+        <img src="./jmiLogo.png" alt="JMI Logo" class="logo-left" />
+        <img src="./logo.jpg" alt="Logo" class="logo-right" />
+      </div>
+      <div class="header-bottom">
+        <p>Welcome to Jamia Millia Islamia</p>
+      </div>
+    </header>
+
+    <!-- Registration Form Section -->
+    <div class="form-container">
+      <h2>Registration</h2>
+      <form action="register.php" method="POST">
+        <div class="form-group">
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name of Applicant:</label>
+          <input
+            style="width: 34.5%; margin-right: 1%"
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            style="width: 34.5%"
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="father-name">Father's Name:</label>
+          <input type="text" id="father-name" name="father-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mother-name">Mother's Name:</label>
+          <input type="text" id="mother-name" name="mother-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile No. of the Applicant:</label>
+          <input type="tel" id="mobile" name="mobile" required />
+        </div>
+
+        <div class="captcha-group">
+          <label for="captcha">Captcha:</label>
+          <div style="width: 80%" class="captcha-box">
+            <img
+              style="margin: 10px 10px 15px 0"
+              src="captcha.png"
+              alt="captcha"
+            />
+            <input
+              style="width: 76.5%"
+              type="text"
+              id="captcha"
+              name="captcha"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Sign up</button>
+
+        <p>Already Registered? <a href="#">Back to Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+/* Color variables */
+:root {
+  --primary-color: #00b8e6;
+  --secondary-color: #007dae;
+  --header-bg-color: #073a5b;
+  --header-content-bg: #fff;
+  --button-bg: #529ad9; /* Background color for the sign-up button */
+  --button-color: white; /* Black text color for the sign-up button */
+  --form-heading-bg: #e0e0e0; /* One shade darker than #f4f4f4 */
+  --form-heading-text-color: #606060; /* Darker text color for heading */
+  --submit-btn-color: #ffb703; /* Submit button color */
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  padding: 10px 0;
+  position: relative;
+}
+
+.sign-in-btn {
+  background-color: var(--button-bg); /* Reversed background color */
+  color: var(--button-color); /* Reversed text color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  right: 20px; /* Aligns the button to the right */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--header-content-bg);
+  margin-top: 50px;
+}
+
+.logo-left {
+  height: 50px;
+}
+
+.logo-right {
+  height: 50px;
+}
+
+.header-bottom {
+  background-color: var(--primary-color);
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form-container {
+  background-color: #f4f4f4;
+  margin: 50px auto;
+  max-width: 80%; /* Set width to 80% */
+  border: 1px solid #ccc; /* Add a 1px border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form-container h2 {
+  background-color: var(--form-heading-bg); /* Darker background */
+  color: var(--form-heading-text-color); /* Darker text color */
+  text-align: left; /* Left-align the text */
+  margin: 0 0 20px; /* Adjust margin for spacing */
+  padding: 10px; /* Add padding for spacing */
+  font-size: 18px; /* Smaller font size */
+  border-bottom: 1px solid #ccc; /* Add bottom border */
+}
+
+form {
+  padding: 0 20px 30px 20px; /* Updated padding with 30px at the bottom */
+  text-align: center; /* Center the submit button */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 20%; /* Set label width to 20% */
+  margin-right: 10px; /* Space between label and input */
+  text-align: end;
+}
+
+/* Add red asterisk for required fields */
+label:after {
+  content: "*";
+  color: red; /* Color of the asterisk */
+}
+
+input,
+select {
+  width: 70%; /* Set input width to 70% */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Adjust captcha layout */
+.captcha-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align captcha elements */
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust captcha image size */
+.captcha-box img {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+/* Sign in and Submit Button Styles */
+.submit-btn {
+  background-color: #ffb703; /* Shared background color */
+  color: var(--button-color); /* Shared text color */
+  padding: 10px 20px; /* Same padding for both */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0px auto 10px; /* Center the buttons */
+  width: auto; /* Auto width to match both buttons */
+  font-size: 16px;
+}
+.sign-in-btn {
+  background-color: var(--button-bg);
+}
+
+p {
+  text-align: center;
+}
